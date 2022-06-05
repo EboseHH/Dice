@@ -1,6 +1,11 @@
-alert("working")
 
-function play() {
+function playGame() {
+    // create a variable that contains the value inside the text box
+    var playerName = document.querySelector("input").value
+
+    // set the inner content of the first P tag (player 1)
+    document.querySelector(".dice p").innerHTML = playerName
+
     var randomNumber1 = Math.random()
     // Multiply the result of Math.random by maximum range value (6 here since that's the highest number on a dice)
     // Add 1 to ensure you do not get a value of 0
@@ -27,7 +32,7 @@ function play() {
 
     //If player 1 wins
     if (randomNumber1 > randomNumber2) {
-        document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
+        document.querySelector("h1").innerHTML = playerName + " Wins! 🚩";
     }
     else if (randomNumber2 > randomNumber1) {
         document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";

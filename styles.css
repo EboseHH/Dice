@@ -4,7 +4,12 @@
   text-align: center;
 }
 
-.roll{
+input {
+  background-color: #393E46;
+  color: #fff;
+}
+
+.roll {
   display: block;
   margin: 0 auto;
   font-size: large;
@@ -12,6 +17,7 @@
   color: #fff;
   padding: 10px 12px;
   border-radius: 50px;
+  margin-top: 20px;
 }
 
 .dice {
@@ -26,7 +32,7 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 20px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
@@ -42,5 +48,3 @@ p {
 img {
   width: 80%;
 }
-
-
